@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <%- include('../partials/head') %>
+    <title>Movies</title>
+</head>
+<body>
+    <div id="body">
+        <div id="header">
+            <header>Movies Now Playing</header>
+        </div>
+        <div id="mGallery">
+            <% movieInfo.forEach(element => { %>
+            <div class="mInfoSpace">
+                <img src="http://image.tmdb.org/t/p/w185<%- element[1] %>">
+                <%= element[0] %>
+                </div>
+            <% }) %>
+        </div>
+        <div id="footer">
+            <%- include('../partials/footer') %>
+        </div>
+    </div>
+</body>
+</html>

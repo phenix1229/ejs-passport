@@ -1,9 +1,10 @@
 const express = require('express');
 const router = express.Router();
 const users = require('../models/Users');
-const userController = require('../controllers/userController');
+const controller = require('../controllers/userController');
 
-router.get('/random', userController.getRandomUsers);
-router.get('/movies', userController.getMovies);
+router.get('/', controller.getHome);
+router.get('/random', controller.getRandomUsers);
+router.get('/movies', controller.getMovies);
 
 module.exports = router;

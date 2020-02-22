@@ -16,11 +16,15 @@ mongoose.connect(process.env.MONGODB_URI, {
 }).catch(err => console.log(`Mongo Error: ${err}`));
 
 module.exports = {
-    getRandomUsers:(req, res) => {
-        res.render('random', {userInfo})
+    getHome:(req, res) => {
+        res.render('main/index');
     },
-    
+
+    getRandomUsers:(req, res) => {
+        res.render('main/random', {userInfo});
+    },
+
     getMovies:(req, res) => {
-        res.render('movies',{movieInfo});
+        res.render('main/movies',{movieInfo});
     }
 };

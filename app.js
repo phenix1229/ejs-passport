@@ -15,6 +15,8 @@ app.use(express.json());
 app.use(express.urlencoded({extended:true}));
 
 app.use('/', userRoutes);
+app.use('/random', userRoutes);
+app.use('/movies', userRoutes);
 
 app.listen(port, ()=>{
     console.log(`Listening on port ${port}`);

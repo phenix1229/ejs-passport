@@ -10,6 +10,6 @@ const movieList = ()=>{
     )})
     .catch(err=>console.log('that sucks, it broke'))
 }
-movieList();
+// movieList();
 
 module.exports = newArr;

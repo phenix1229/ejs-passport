@@ -32,6 +32,14 @@ body {
     padding-bottom: 5px;
 }
 
+#gallery {
+    background-color: #506296;
+    grid-area: gallery;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minMax(450px, auto));
+    overflow-x: hidden;
+}
+
 #mGallery {
     background-color: #506296;
     grid-area: gallery;

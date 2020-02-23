@@ -87,6 +87,20 @@ body {
     margin: 10px 4px;
 }
 
+.homeAnchor {
+    align-self: center;
+    justify-self: center;
+    font-size: 2em;
+    text-decoration: none;
+}
+
+a {
+    align-self: center;
+    justify-self: center;
+    font-size: 1em;
+    text-decoration: none;
+}
+
 @media (max-width: 470px){
     .mInfoSpace{
         margin-left: 0;
